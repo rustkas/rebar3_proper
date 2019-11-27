@@ -351,7 +351,7 @@ compile(State, AppName, Src, Out) ->
                           Opts,
                           [{src_dirs, ["."]}]),
     IncludeOpts = add_includes(NewOpts, State),
-    rebar_erlc_compiler:compile(IncludeOpts, Src, ec_cnv:to_list(Out)).
+    rebar_compiler_erl:compile(Src, ec_cnv:to_list(Out),Opts,IncludeOpts).
 
 find_app(AppName, State) ->
     [App] = [App || App <- rebar_state:project_apps(State),
