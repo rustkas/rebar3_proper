@@ -12,6 +12,6 @@
 
   {maintainers, ["Fred Hebert"]},
   {licenses, ["BSD"]},
-  {links, [{"Github", "https://github.com/ferd/rebar3_proper"},
+  {links, [{"Github", "https://github.com/rustkas/rebar3_proper"},
            {"PropEr", "http://proper.softlab.ntua.gr/"}]}
  ]}.
